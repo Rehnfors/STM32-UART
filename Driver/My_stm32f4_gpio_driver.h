@@ -20,9 +20,9 @@ typedef struct
 	__IO	uint32_t MODER;
 	__IO	uint32_t OTYPER;
 	__IO	uint32_t OSPEEDR;
-	__IO  uint32_t PUPDR;
-	__IO  uint32_t IDR;
-	__IO  uint32_t ODR;
+	__IO  	uint32_t PUPDR;
+	__IO  	uint32_t IDR;
+	__IO  	uint32_t ODR;
 	__IO	uint32_t BSRR;
 	__IO	uint32_t LCKR;
 	__IO	uint32_t AFR[2];

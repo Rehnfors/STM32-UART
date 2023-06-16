@@ -5,7 +5,7 @@
 #include "My_stm32f4_common_driver.h"
 #include "My_stm32f4_gpio_driver.h"
            
-#define     UART_BASE (APB1_BASE + 0x4400U)
+#define     UART_BASE (PERIPH_BASE + 0x4400U)
 
 #define		__IO			volatile
 
@@ -20,6 +20,8 @@ typedef struct UART
    __IO uint32_t GTPR; // Guard time and prescaler register
 
 }UART_TypeDef;
+
+#define		UART2		((UART_TypeDef *)UART_BASE)
 
 
 

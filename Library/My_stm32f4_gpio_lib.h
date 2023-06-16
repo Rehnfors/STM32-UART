@@ -24,8 +24,8 @@
 
 #define		GPIO_MODE_INPUT				0x00U
 
-#define		GPIO_MODE_OUTPUT_PP		0x11U
-#define		GPIO_MODE_OUTPUT_OD		0x01U
+#define		GPIO_MODE_OUTPUT_PP			0x11U
+#define		GPIO_MODE_OUTPUT_OD			0x01U
 #define		GPIO_MODE_AF_PP				0x02U
 #define 	GPIO_MODE_AF_OD				0x12U
 
@@ -36,7 +36,7 @@
 
 typedef struct{
 	uint32_t 		Pin;
-	uint32_t    Mode;
+	uint32_t    	Mode;
 	uint32_t 		Pull;
 	uint32_t 		Speed;
 	uint32_t 		Alternate;
