@@ -6,19 +6,10 @@
 #include "My_stm32f4_common_driver.h"
 #include "My_stm32f4_gpio_driver.h"
 
-typedef enum
-{
-
-}UART_ComType;
-
-typedef enum
-{
-
-}UART_BaudRateType;
-
-
-int LIB_UART_WRITE(char ch);
+void LIB_UART_INIT(GPIO_TypeDef*);
+void LIB_UART_ENABLE(UART_TypeDef* UART, int BR_option);
+void LIB_UART_DISABLE(UART_TypeDef* UART);
 int LIB_UART_READ();
-void LIB_UART_INIT(UART_ComType *Com, UART_BaudRateType *Baud);
+int LIB_UART_WRITE(char ch);
 
 #endif
